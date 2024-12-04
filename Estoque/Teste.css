@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove margens do body */
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Define a largura completa */
+    box-sizing: border-box; /* Inclui padding dentro da largura total */
+}
+
+.header img {
+    height: 35px;
+    margin-right: 10px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 0px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.status-disponivel {
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-indisponivel {
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group input, .form-group select, .form-group button {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#generateReportBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

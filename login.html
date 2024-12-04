@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h1>Bem-vindo</h1>
+    <p>Faça login para acessar seus quadros.</p>
+    <input type="email" id="email" placeholder="Digite seu email" required>
+    <button id="login-btn">Entrar</button>
+  </div>
+
+  <script>
+    document.getElementById('login-btn').addEventListener('click', () => {
+      const email = document.getElementById('email').value.trim();
+      if (email) {
+        localStorage.setItem('userEmail', email); // Armazena o email no navegador
+        window.location.href = 'index.html'; // Redireciona para a aplicação
+      } else {
+        alert('Por favor, insira um email válido.');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--header-bg);
+    color: var(--header-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botões */
+  button {
+    padding: 10px 15px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Área principal */
+  main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Lista de quadros */
+  #board-list {
+    width: 25%;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #boards {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #boards li {
+    padding: 10px;
+    background-color: var(--list-item-bg);
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #boards li:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Quadro de tarefas */
+  #task-board {
+    flex-grow: 1;
+    background: var(--task-board-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Colunas */
+  #columns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    width: 200px;
+    background: var(--column-bg);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .column h3 {
+    margin: 0;
+    color: var(--column-title-color);
+  }
+  
+  .task {
+    background-color: var(--task-bg);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tela de login */
+  .login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--login-bg);
+  }
+  
+  .login-container {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-container h1 {
+    margin-bottom: 15px;
+    color: var(--header-color);
+  }
+  
+  .login-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 15px;
+    border: 1px solid var(--input-border);
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+  }
+  
+  /* Temas */
+  :root {
+    --background: #f0f0f5;
+    --text-color: #333;
+    --header-bg: #4CAF50;
+    --header-color: white;
+    --button-bg: #4CAF50;
+    --button-color: white;
+    --button-hover-bg: #45a049;
+    --card-bg: white;
+    --task-board-bg: #fafafa;
+    --list-item-bg: #f9f9f9;
+    --column-bg: #e0e0e0;
+    --column-title-color: black;
+    --task-bg: #ffffff;
+    --login-bg: #e8f5e9;
+    --input-border: #ddd;
+  }
+  
+  body.dark {
+    --background: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: #333;
+    --header-color: white;
+    --button-bg: #444;
+    --button-color: white;
+    --button-hover-bg: #555;
+    --card-bg: #1e1e1e;
+    --task-board-bg: #1c1c1c;
+    --list-item-bg: #222;
+    --column-bg: #333;
+    --column-title-color: white;
+    --task-bg: #444;
+    --login-bg: #1a1a1a;
+    --input-border: #555;
+  }
+  
